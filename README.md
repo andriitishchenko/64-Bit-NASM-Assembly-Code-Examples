@@ -70,4 +70,5 @@ https://cs.lmu.edu/~ray/notes/nasmtutorial/
 #### Tutorials x32
 https://asmtutor.com
 
-
+#### Intel
+https://software.intel.com/en-us/articles/intel-sdm
