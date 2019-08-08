@@ -53,6 +53,14 @@ nasm -fmacho64 "${asm_file}" --prefix _ -o "${nasm_o}" && ld -macosx_version_min
 also read about this params:
 -demangle -dynamic -arch x86_64 
 
+
+#### ERRORS
+find_max_and_min.asm:41: error: Mach-O 64-bit format does not support 32-bit absolute addresses
+
+Mac OS X, like other UNIX/POSIX systems, uses a different calling convention for 64-bit code. Instead of pushing all the arguments to the stack, it uses RDI, RSI, RDX, RCX, R8, and R9 for the first 6 arguments. 
+
+read more about <b>"default rel"</b>
+
 #### NASM
 https://nasm.us/doc/nasmdoc0.html
 
